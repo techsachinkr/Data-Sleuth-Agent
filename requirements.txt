@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+langgraph
+pydantic-settings
+Flask
+langchain
+langchain_openai
+python-dotenv
+google-generativeai
+fpdf2
+google-genai

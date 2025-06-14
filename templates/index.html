@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligence System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Intelligence Gathering System</h1>
+        </header>
+        <main>
+            <div class="chat-interface">
+                <h2>Conversation</h2>
+                <div id="message-display" class="message-display">
+                    <!-- Messages will appear here -->
+                </div>
+                <div class="input-area">
+                    <input type="text" id="user-input" placeholder="Enter your query or response...">
+                    <button id="send-button">Send</button>
+                </div>
+            </div>
+            <aside class="sidebar">
+                <section class="agent-invocation">
+                    <h2>Agent Status</h2>
+                    <p id="agent-status">Agent: Idle</p>
+                    <!-- More detailed agent triggers can be added here -->
+                </section>
+                <section class="progress-tracking">
+                    <h2>Progress</h2>
+                    <div id="progress-bar-container">
+                        <div id="progress-bar" style="width: 0%; background-color: #4CAF50; height: 20px; text-align: center; line-height: 20px; color: white;">0%</div>
+                    </div>
+                    <p id="progress-text">Information Completeness: 0%</p>
+                </section>
+                <section class="memory-panel">
+                    <h2>Key Facts Discovered</h2>
+                    <ul id="key-facts-list">
+                        <!-- Key facts will be listed here -->
+                    </ul>
+                </section>
+                <section class="report-generation">
+                    <h2>Reports</h2>
+                    <button id="generate-report-button">Generate Report</button>
+                    <div id="report-output">
+                        <!-- Report link or content can appear here -->
+                    </div>
+                </section>
+            </aside>
+        </main>
+        <footer>
+            <p>&copy; 2025 Intelligence System</p>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script></body>
+</html> 

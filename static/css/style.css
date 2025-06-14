@@ -1,0 +1,198 @@
+/* Basic styling - will be expanded */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure footer is at the bottom */
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px; /* Max width for larger screens */
+    margin: auto;
+    overflow: hidden; /* Clear floats */
+    padding: 0 20px;
+    flex: 1; /* Allow main content to grow and push footer down */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    display: flex;
+    gap: 20px; /* Space between chat interface and sidebar */
+    padding-top: 20px;
+}
+
+.chat-interface {
+    flex: 3; /* Takes up 3 parts of the space */
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.chat-interface h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.message-display {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+}
+
+.input-area {
+    display: flex;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#send-button {
+    padding: 10px 15px;
+    background: #77aaff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+
+#send-button:hover {
+    background: #5588dd;
+}
+
+.sidebar {
+    flex: 1; /* Takes up 1 part of the space */
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between sidebar sections */
+}
+
+.sidebar section {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: #fbfbfb;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+#progress-bar-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+#progress-bar {
+    height: 20px;
+    background-color: #4CAF50;
+    width: 0%; /* Initial width */
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    border-radius: 3px;
+    transition: width 0.3s ease-in-out;
+}
+
+#key-facts-list {
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px; /* Increased height for more facts */
+    overflow-y: auto;
+    margin: 0;
+}
+
+#key-facts-list li {
+    padding: 8px 10px;
+    margin-bottom: 5px;
+    border-left: 3px solid #77aaff;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+    font-size: 13px;
+    line-height: 1.4;
+    transition: background-color 0.2s ease;
+}
+
+#key-facts-list li:hover {
+    background-color: #e9ecef;
+}
+
+#key-facts-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Special styling for different types of facts */
+#key-facts-list li:contains("🎯") {
+    border-left-color: #dc3545; /* Red for targets */
+}
+
+#key-facts-list li:contains("🔍") {
+    border-left-color: #28a745; /* Green for evidence */
+}
+
+#key-facts-list li:contains("📋") {
+    border-left-color: #ffc107; /* Yellow for planning */
+}
+
+#key-facts-list li:contains("🔄") {
+    border-left-color: #17a2b8; /* Cyan for pivots */
+}
+
+#generate-report-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#generate-report-button:hover {
+    background-color: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px; /* Ensure space above footer */
+} 
