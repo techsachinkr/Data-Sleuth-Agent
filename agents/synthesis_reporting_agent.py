@@ -124,7 +124,8 @@ class SynthesisReportingAgent(BaseAgent):
         """
         
         try:
-            response = await self.generate_response(report_prompt)
+            # Disable tools for report generation to get pure text response
+            response = await self.generate_response(report_prompt, use_tools=False)
             report_data = await self._parse_report_data(response)
             
             # Create structured intelligence report
@@ -261,19 +262,38 @@ class SynthesisReportingAgent(BaseAgent):
     
     async def _parse_report_data(self, response: str) -> Dict[str, Any]:
         """Parse the JSON response from report generation"""
+        self.logger.debug(f"Attempting to parse response of length {len(response)}: {response[:200]}...")
+        
         try:
+            # First try to find JSON in the response
             json_match = re.search(r'\{.*\}', response, re.DOTALL)
             if json_match:
-                return json.loads(json_match.group())
+                json_str = json_match.group()
+                self.logger.debug(f"Found JSON match of length {len(json_str)}")
+                parsed_data = json.loads(json_str)
+                self.logger.info("Successfully parsed report data from JSON response")
+                return parsed_data
+            else:
+                self.logger.warning("No JSON structure found in response")
+        except json.JSONDecodeError as e:
+            self.logger.error(f"JSON decode error: {e}")
+            self.logger.debug(f"Failed JSON content: {json_match.group() if json_match else 'No JSON match'}")
         except Exception as e:
-            self.logger.error(f"Error parsing report data: {e}")
+            self.logger.error(f"Unexpected error parsing report data: {e}")
         
-        # Return default structure
+        # Log the full response for debugging
+        self.logger.error(f"Full response that failed to parse: {response}")
+        
+        # Return default structure with more detailed debugging info
         return {
             "executive_summary": "Report generation encountered parsing issues. Raw analysis available in appendices.",
             "key_findings": [],
             "intelligence_assessment": {"overall_confidence": 0.5, "information_quality": "fair"},
-            "appendices": {"raw_response": response[:1000]}
+            "appendices": {
+                "raw_response": response[:1000],
+                "response_length": len(response),
+                "parsing_error": "Failed to extract valid JSON from response"
+            }
         }
     
     async def _generate_fallback_report(self, state: InvestigationState) -> IntelligenceReport:

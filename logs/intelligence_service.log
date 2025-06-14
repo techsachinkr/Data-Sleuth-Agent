@@ -20466,3 +20466,685 @@ RECENT QUESTIONS: Could you walk me through your journey with Chegg, starting fr
 2025-06-13 23:20:23,241 - services.intelligence_service - INFO - Report generated successfully for c717028b-35bd-495c-a6d1-d7f008894626
 2025-06-13 23:38:56,650 - main - INFO - Shutting down Intelligence Gathering Service...
 2025-06-13 23:38:56,650 - services.websocket_manager - INFO - All WebSocket connections closed
+2025-06-14 00:34:19,444 - main - INFO - Starting Intelligence Gathering Service...
+2025-06-14 00:34:19,444 - services.intelligence_service - INFO - Intelligence service initialized with complete agent pipeline
+2025-06-14 00:34:22,385 - main - INFO - Shutting down Intelligence Gathering Service...
+2025-06-14 00:34:22,385 - services.websocket_manager - INFO - All WebSocket connections closed
+2025-06-14 00:35:29,749 - main - INFO - Starting Intelligence Gathering Service...
+2025-06-14 00:35:29,749 - services.intelligence_service - INFO - Intelligence service initialized with complete agent pipeline
+2025-06-14 00:37:09,498 - main - INFO - Shutting down Intelligence Gathering Service...
+2025-06-14 00:37:09,498 - services.websocket_manager - INFO - All WebSocket connections closed
+2025-06-14 00:38:06,054 - main - INFO - Starting Intelligence Gathering Service...
+2025-06-14 00:38:06,054 - services.intelligence_service - INFO - Intelligence service initialized with complete agent pipeline
+2025-06-14 00:39:26,515 - services.intelligence_service - INFO - Starting comprehensive investigation cfc2ddd7-3a11-46c8-a263-397a8c478c6a
+2025-06-14 00:39:26,525 - services.intelligence_service - INFO - Phase 1: Query Analysis for cfc2ddd7-3a11-46c8-a263-397a8c478c6a
+2025-06-14 00:39:26,525 - agents.query_analysis_agent - INFO - Analyzing query: Gather intelligence on Michael Schumacher operations and potential risk indicators...
+2025-06-14 00:39:26,525 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Conduct comprehensive intelligence analysis of this request:
+        "Gather intelligence on Michael Schumacher operations and potential risk indicators"
+        
+        Provide detailed JSON response:
+        {
+            "query_classification": {
+                "complexity": "simple|moderate|complex|highly_complex",
+                "sensitivity_level": "low|medium|high|critical",
+                "investigation_type": "person|organization|location|multi-target|relationship_mapping",
+                "estimated_scope": "narrow|broad|comprehensive"
+            },
+            "primary_entities": [
+                {
+                    "name": "entity_name",
+                    "type": "person|organization|location",
+                    "priority": "critical|high|medium|low",
+                    "confidence": 0.0-1.0,
+                    "context_clues": ["clue1", "clue2"],
+                    "potential_aliases": ["alias1", "alias2"]
+                }
+            ],
+            "secondary_entities": [
+                {
+                    "name": "related_entity",
+                    "type": "person|organization|location",
+                    "relationship_to_primary": "description",
+                    "priority": "high|medium|low"
+                }
+            ],
+            "information_requirements": {
+                "primary_objectives": ["objective1", "objective2"],
+                "information_categories": ["financial", "operational", "personal", "legal", "relationships"],
+                "specific_questions": ["question1", "question2"],
+                "time_frame": "current|historical|both",
+                "geographic_scope": ["location1", "location2"]
+            },
+            "collection_strategy": {
+                "recommended_approaches": ["interview", "document_review", "relationship_mapping"],
+                "potential_sources": ["source_type1", "source_type2"],
+                "collection_priorities": ["priority1", "priority2"],
+                "risk_considerations": ["risk1", "risk2"]
+            },
+            "success_criteria": {
+                "minimum_requirements": ["requirement1", "requirement2"],
+                "optimal_outcomes": ["outcome1", "outcome2"],
+                "quality_indicators": ["indicator1", "indicator2"]
+            }
+        }
+        ...
+2025-06-14 00:39:56,055 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 00:39:56,055 - agents.query_analysis_agent - INFO - Generated response of length 5991
+2025-06-14 00:39:56,055 - agents.query_analysis_agent - INFO - Analysis complete. Found 8 entities with moderate complexity
+2025-06-14 00:39:56,055 - services.intelligence_service - INFO - Phase 2: Strategic Planning for cfc2ddd7-3a11-46c8-a263-397a8c478c6a
+2025-06-14 00:39:56,055 - agents.planning_&_orchestration_agent - INFO - Creating comprehensive investigation plan
+2025-06-14 00:39:56,065 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Develop a comprehensive intelligence gathering strategy:
+        
+        INVESTIGATION CONTEXT:
+        ORIGINAL QUERY: Gather intelligence on Michael Schumacher operations and potential risk indicators
+COMPLEXITY: moderate
+SENSITIVITY: high
+TARGET ENTITIES: Michael Schumacher (person) [Priority: critical], Corinna Schumacher (person) [Priority: high], Sabine Kehm (person) [Priority: high], Mick Schumacher (person) [Priority: medium], Keep Fighting Foundation (organization) [Priority: high], Ferrari (organization) [Priority: medium], Deutsche Vermögensberatung (DVAG) (organization) [Priority: medium], Gland, Switzerland (location) [Priority: high]
+INFORMATION CATEGORIES: financial, operational, personal, legal, reputational
+RECOMMENDED APPROACHES: document_review, media analysis, relationship_mapping, open-source intelligence (OSINT)
+INFORMATION GAPS: Identify the nature of Michael Schumacher's current 'operations', likely referring to his business interests, investments, and foundation activities., Assess potential risks, including financial, reputational, legal, and health-related factors managed by his family and representatives.
+        
+        Create a strategic plan in JSON format:
+        {
+            "mission_analysis": {
+                "primary_objectives": ["objective1", "objective2"],
+                "success_criteria": ["criteria1", "criteria2"],
+                "critical_information_requirements": ["requirement1", "requirement2"],
+                "priority_intelligence_targets": ["target1", "target2"]
+            },
+            "collection_strategy": {
+                "phase_1_immediate": {
+                    "objectives": ["immediate_objective1", "immediate_objective2"],
+                    "collection_methods": ["method1", "method2"],
+                    "expected_outcomes": ["outcome1", "outcome2"],
+                    "success_indicators": ["indicator1", "indicator2"]
+                },
+                "phase_2_development": {
+                    "objectives": ["development_objective1", "development_objective2"],
+                    "collection_methods": ["method1", "method2"],
+                    "pivot_opportunities": ["pivot1", "pivot2"],
+                    "expansion_targets": ["target1", "target2"]
+                },
+                "phase_3_exploitation": {
+                    "objectives": ["exploitation_objective1", "exploitation_objective2"],
+                    "synthesis_requirements": ["requirement1", "requirement2"],
+                    "verification_needs": ["verification1", "verification2"]
+                }
+            },
+            "interview_strategy": {
+                "questioning_approach": "direct|indirect|layered|adaptive",
+                "rapport_building": ["technique1", "technique2"],
+                "information_elicitation": ["technique1", "technique2"],
+                "verification_methods": ["method1", "method2"],
+                "pivot_triggers": ["trigger1", "trigger2"]
+            },
+            "coordination_plan": {
+                "retrieval_agent_tasks": ["task1", "task2"],
+                "pivot_agent_triggers": ["trigger1", "trigger2"],
+                "synthesis_checkpoints": ["checkpoint1", "checkpoint2"],
+                "quality_control_measures": ["measure1", "measure2"]
+            },
+            "risk_management": {
+                "operational_risks": ["risk1", "risk2"],
+                "information_security": ["measure1", "measure2"],
+                "source_protection": ["protection1", "protection2"],
+                "contingency_plans": ["plan1", "plan2"]
+            },
+            "resource_allocation": {
+                "time_estimates": {"phase_1": "estimate", "phase_2": "estimate", "phase_3": "estimate"},
+                "priority_distribution": {"high": 40, "medium": 35, "low": 25},
+                "collection_focus": ["focus_area1", "focus_area2"]
+            }
+        }
+        ...
+2025-06-14 00:40:44,616 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 00:40:44,616 - agents.planning_&_orchestration_agent - INFO - Generated response of length 10734
+2025-06-14 00:40:44,616 - agents.planning_&_orchestration_agent - INFO - Strategic plan created with 3 objectives
+2025-06-14 00:40:44,616 - services.intelligence_service - INFO - Phase 3: Initial Question Formulation for cfc2ddd7-3a11-46c8-a263-397a8c478c6a
+2025-06-14 00:40:44,625 - agents.retrieval_agent - INFO - Formulating strategic questions based on investigation plan
+2025-06-14 00:40:44,625 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Formulate strategic questions based on the comprehensive investigation context:
+        
+        INVESTIGATION CONTEXT:
+        CURRENT PHASE: immediate
+CURRENT OBJECTIVES: Establish a foundational baseline of publicly available information on all priority entities., Map the official roles and public statements of Corinna Schumacher, Sabine Kehm, and Mick Schumacher since December 2013.
+INTERVIEW APPROACH: layered
+TARGET ENTITIES: Michael Schumacher (person) [Priority: critical, Confidence: 1.0], Corinna Schumacher (person) [Priority: high, Confidence: 0.6], Sabine Kehm (person) [Priority: high, Confidence: 0.6], Mick Schumacher (person) [Priority: medium, Confidence: 0.6], Keep Fighting Foundation (organization) [Priority: high, Confidence: 0.6], Ferrari (organization) [Priority: medium, Confidence: 0.6], Deutsche Vermögensberatung (DVAG) (organization) [Priority: medium, Confidence: 0.6], Gland, Switzerland (location) [Priority: high, Confidence: 0.6]
+CRITICAL INFORMATION GAPS: What is the legal and financial structure of the Keep Fighting Foundation, including its governance, major donors, and expenditure patterns?, Who are the primary legal and financial advisors currently managing the Schumacher family's assets and business interests?, What is the current nature and value of the enduring partnership with Deutsche Vermögensberatung (DVAG)?, Are there any pending, recent, or potential legal challenges or liabilities?, What specific security and privacy protocols are in place at the Gland, Switzerland residence and how have they been tested?
+        
+        Generate questions in JSON format:
+        {
+            "question_strategy": {
+                "primary_approach": "direct|indirect|layered|verification|exploration",
+                "questioning_phase": "opening|development|probing|verification|closing",
+                "rapport_level": "building|established|challenging|recovery",
+                "information_priority": "critical|high|medium|exploratory"
+            },
+            "questions": [
+                {
+                    "question_text": "The actual question to ask",
+                    "question_type": "open_ended|closed|hypothetical|timeline|relationship|verification",
+                    "strategic_purpose": "What this question aims to achieve",
+                    "expected_information": "Type of information expected",
+                    "priority": "critical|high|medium|low",
+                    "follow_up_potential": "high|medium|low"
+                }
+            ],
+            "questioning_sequence": {
+                "opening_questions": ["question1", "question2"],
+                "core_questions": ["question1", "question2"],
+                "verification_questions": ["question1", "question2"],
+                "expansion_questions": ["question1", "question2"]
+            },
+            "tactical_considerations": {
+                "sensitivity_factors": ["factor1", "factor2"],
+                "potential_resistance_points": ["point1", "point2"],
+                "rapport_maintenance": ["technique1", "technique2"],
+                "pivot_opportunities": ["opportunity1", "opportunity2"]
+            }
+        }
+        ...
+2025-06-14 00:41:17,846 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 00:41:17,855 - agents.retrieval_agent - INFO - Generated response of length 4909
+2025-06-14 00:41:17,855 - agents.retrieval_agent - INFO - Formulated 4 strategic questions with direct approach
+2025-06-14 00:41:17,855 - services.intelligence_service - INFO - Investigation cfc2ddd7-3a11-46c8-a263-397a8c478c6a pipeline initialized successfully
+2025-06-14 00:42:13,189 - services.intelligence_service - INFO - Processing response for cfc2ddd7-3a11-46c8-a263-397a8c478c6a
+2025-06-14 00:42:13,189 - services.intelligence_service - INFO - Phase 4: Pivot Analysis for cfc2ddd7-3a11-46c8-a263-397a8c478c6a
+2025-06-14 00:42:13,192 - agents.pivot_agent - INFO - Analyzing response for pivot opportunities
+2025-06-14 00:42:13,195 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Analyze this intelligence response and identify pivot opportunities:
+        
+        CONTEXT:
+        Target Entities: Michael Schumacher (person), Corinna Schumacher (person), Sabine Kehm (person), Mick Schumacher (person), Keep Fighting Foundation (organization), Ferrari (organization), Deutsche Vermögensberatung (DVAG) (organization), Gland, Switzerland (location)
+Recent Questions: What is the publicly stated mission, history, and key initiatives of the Keep Fighting Foundation since its inception?; How has Mick Schumacher's public commentary regarding his father evolved as his own racing career has progressed since 2013?
+Known Gaps: What is the current nature and value of the enduring partnership with Deutsche Vermögensberatung (DVAG)?; Are there any pending, recent, or potential legal challenges or liabilities?; What specific security and privacy protocols are in place at the Gland, Switzerland residence and how have they been tested?
+        
+        USER RESPONSE:
+        "gather financial history and associated info as well"
+        
+        Provide analysis in JSON format:
+        {
+            "intelligence_value": {
+                "credibility_score": 0.0-1.0,
+                "information_density": "low|medium|high",
+                "new_entities_mentioned": ["entity1", "entity2"],
+                "key_revelations": ["revelation1", "revelation2"]
+            },
+            "pivot_opportunities": {
+                "new_investigation_angles": ["angle1", "angle2"],
+                "follow_up_priorities": ["priority1", "priority2"],
+                "information_gaps_identified": ["gap1", "gap2"],
+                "potential_connections": ["connection1", "connection2"]
+            },
+            "strategic_recommendations": {
+                "next_focus_areas": ["area1", "area2"],
+                "questioning_strategy": "direct|indirect|probing|verification",
+                "investigation_expansion": ["expand_to1", "expand_to2"]
+            },
+            "evidence_assessment": {
+                "actionable_intelligence": ["intel1", "intel2"],
+                "requires_verification": ["claim1", "claim2"],
+                "contradictions_noted": ["contradiction1"]
+            }
+        }
+        ...
+2025-06-14 00:42:34,074 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 00:42:34,075 - agents.pivot_agent - INFO - Generated response of length 3466
+2025-06-14 00:42:34,077 - agents.pivot_agent - INFO - Pivot analysis complete. Found 4 new angles, extracted 3 evidence items
+2025-06-14 00:42:34,085 - services.intelligence_service - INFO - Phase 5: Strategy Update for cfc2ddd7-3a11-46c8-a263-397a8c478c6a
+2025-06-14 00:42:34,087 - agents.planning_&_orchestration_agent - INFO - Updating investigation strategy based on new intelligence
+2025-06-14 00:42:34,088 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Update the investigation strategy based on new intelligence:
+        
+        CURRENT SITUATION:
+        CURRENT PHASE: immediate
+CURRENT OBJECTIVES: Establish a foundational baseline of publicly available information on all priority entities., Map the official roles and public statements of Corinna Schumacher, Sabine Kehm, and Mick Schumacher since December 2013.
+EVIDENCE COLLECTED: 3 items
+RECENT EVIDENCE: Directive to immediately commence research into th...; The investigation is officially pivoting to includ...; There is a clear directive to prioritize financial...
+CURRENT FOCUS: Financial forensics of the Schumacher family's wealth management and asset protection strategies., The flow of funds between personal assets, corporate sponsorships (DVAG, Ferrari), and the Keep Fighting Foundation., Analysis of the financial burden of long-term medical care and security, and how assets are being leveraged to cover these costs.
+        
+        Provide strategy updates in JSON format:
+        {
+            "strategy_assessment": {
+                "current_phase_status": "on_track|needs_adjustment|pivot_required",
+                "objective_completion": {"completed": [], "in_progress": [], "blocked": []},
+                "new_opportunities": ["opportunity1", "opportunity2"],
+                "emerging_priorities": ["priority1", "priority2"]
+            },
+            "tactical_adjustments": {
+                "questioning_modifications": ["modification1", "modification2"],
+                "focus_shifts": ["shift1", "shift2"],
+                "new_collection_targets": ["target1", "target2"],
+                "pivot_recommendations": ["recommendation1", "recommendation2"]
+            },
+            "next_phase_preparation": {
+                "readiness_assessment": "ready|needs_more_intel|major_gaps",
+                "transition_triggers": ["trigger1", "trigger2"],
+                "preparation_tasks": ["task1", "task2"]
+            }
+        }
+        ...
+2025-06-14 00:42:55,605 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 00:42:55,605 - agents.planning_&_orchestration_agent - INFO - Generated response of length 3536
+2025-06-14 00:42:55,605 - services.intelligence_service - INFO - Phase 6: Adaptive Question Generation for cfc2ddd7-3a11-46c8-a263-397a8c478c6a
+2025-06-14 00:42:55,605 - services.intelligence_service - INFO - Questioning decision for cfc2ddd7-3a11-46c8-a263-397a8c478c6a: Evidence: 3/5, Confidence: 0.09/0.7, Gaps: 11/3, Turns: 1/20, Continue: True
+2025-06-14 00:42:55,605 - agents.retrieval_agent - INFO - Adapting questions based on pivot analysis
+2025-06-14 00:42:55,605 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Adapt questioning strategy based on pivot analysis:
+        
+        PIVOT ANALYSIS CONTEXT:
+        RESPONSE CREDIBILITY: 0.9
+INFORMATION DENSITY: medium
+NEW ANGLES IDENTIFIED: From general role mapping to identifying financial decision-makers and asset managers., From tracking public appearances to tracking financial events (asset liquidation, new investments, sponsorship renewals).
+NEW GAPS IDENTIFIED: Leverage financial news archives to trace the history of sponsorship deals (DVAG, Ferrari)., Analyze the public statements of family representatives through a financial lens, looking for clues about asset management., Investigate the corporate structure of the Keep Fighting Foundation for financial transparency reports.
+RECOMMENDED FOCUS: From general role mapping to identifying financial decision-makers and asset managers., From tracking public appearances to tracking financial events (asset liquidation, new investments, sponsorship renewals).
+        
+        Generate adapted questions in JSON format:
+        {
+            "adaptation_strategy": {
+                "pivot_response": "expand|focus|verify|redirect|probe_deeper",
+                "new_priorities": ["priority1", "priority2"],
+                "questioning_adjustments": ["adjustment1", "adjustment2"],
+                "tactical_shifts": ["shift1", "shift2"]
+            },
+            "adapted_questions": [
+                {
+                    "question_text": "Adapted question based on pivot analysis",
+                    "adaptation_reason": "Why this question was chosen based on pivot",
+                    "expected_intelligence": "What intelligence this should yield",
+                    "priority": "critical|high|medium|low"
+                }
+            ],
+            "follow_up_strategy": {
+                "immediate_follow_ups": ["follow_up1", "follow_up2"],
+                "contingent_questions": ["contingent1", "contingent2"],
+                "verification_needs": ["verification1", "verification2"]
+            }
+        }
+        ...
+2025-06-14 00:43:15,615 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 00:43:15,615 - agents.retrieval_agent - INFO - Generated response of length 4154
+2025-06-14 00:43:15,615 - services.intelligence_service - INFO - Response processed for cfc2ddd7-3a11-46c8-a263-397a8c478c6a. Status: InvestigationStatus.WAITING_FOR_INPUT
+2025-06-14 00:44:00,875 - services.intelligence_service - INFO - Generating comprehensive report for cfc2ddd7-3a11-46c8-a263-397a8c478c6a
+2025-06-14 00:44:00,875 - agents.synthesis_&_reporting_agent - INFO - Generating intelligence report for session cfc2ddd7-3a11-46c8-a263-397a8c478c6a
+2025-06-14 00:44:00,875 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Generate a comprehensive intelligence report based on all collected data:
+        
+        INVESTIGATION CONTEXT:
+        ORIGINAL QUERY: Gather intelligence on Michael Schumacher operations and potential risk indicators
+
+TARGET ENTITIES: Michael Schumacher (person) [Priority: critical], Corinna Schumacher (person) [Priority: high], Sabine Kehm (person) [Priority: high], Mick Schumacher (person) [Priority: medium], Keep Fighting Foundation (organization) [Priority: high], Ferrari (organization) [Priority: medium], Deutsche Vermögensberatung (DVAG) (organization) [Priority: medium], Gland, Switzerland (location) [Priority: high]
+
+INVESTIGATION FOCUS: From general role mapping to identifying financial decision-makers and asset managers., From tracking public appearances to tracking financial events (asset liquidation, new investments, sponsorship renewals).
+
+EVIDENCE COLLECTED (3 items):
+- Testimony: 1 items (avg confidence: 0.90)
+  • Directive to immediately commence research into the financial history of all target entities. (confidence: 0.90)
+- Intelligence: 2 items (avg confidence: 0.90)
+  • The investigation is officially pivoting to include a financial dimension, moving beyond public life... (confidence: 0.90)
+  • There is a clear directive to prioritize financial intelligence (FININT) gathering. (confidence: 0.90)
+
+INVESTIGATION PROCESS:
+- Query Analysis Agent: 1 interactions
+  • Comprehensive query analysis complete. Identified 8 entities across 3 categories...
+- Planning & Orchestration Agent: 2 interactions
+  • Strategic investigation plan developed: 3 primary objectives, 3 phases planned, ...
+  • Strategy updated: Phase status: pivot_required, 3 new opportunities identified, ...
+- Retrieval Agent: 2 interactions
+  • Let me start by understanding the basics:
+
+1. What have been Corinna Schumacher'...
+  • Questions adapted based on pivot analysis: Strategy: focus, 3 questions adapted,...
+- Intelligence Pipeline: 1 interactions
+  • Intelligence gathering pipeline initialized. Identified 8 target entities with m...
+- User provided 1 responses
+- Pivot Agent: 1 interactions
+  • Pivot analysis complete: Credibility: 0.9, 4 new investigation angles identified...
+
+IDENTIFIED GAPS: Who are the primary legal and financial advisors currently managing the Schumacher family's assets and business interests?, What is the current nature and value of the enduring partnership with Deutsche Vermögensberatung (DVAG)?, Are there any pending, recent, or potential legal challenges or liabilities?, What specific security and privacy protocols are in place at the Gland, Switzerland residence and how have they been tested?, The overall structure and location of the Schumacher family's assets., The specific financial mechanisms of the enduring partnership with DVAG., The annual operating budget and funding sources for the security and privacy protocols at the Gland residence., Leverage financial news archives to trace the history of sponsorship deals (DVAG, Ferrari)., Analyze the public statements of family representatives through a financial lens, looking for clues about asset management., Investigate the corporate structure of the Keep Fighting Foundation for financial transparency reports.
+
+RECENT QUESTIONS: Regarding the long-standing sponsorship with Deutsche Vermögensberatung (DVAG), who specifically within the family's inner circle is now the primary signatory or decision-maker for renewing or altering that agreement?; Can you outline any significant sales of personal assets, such as real estate or vehicles, that have occurred since 2014? Who would have overseen the logistics and financial returns of such sales?; Looking at the Keep Fighting Foundation, beyond the public-facing representatives, who is legally and financially responsible for its governance and financial reporting? Is there a board of trustees or a financial director we can identify?; What is that individual's official title or relationship to the family?
+        
+        Generate a structured report in JSON format:
+        {
+            "executive_summary": "High-level summary of key findings and conclusions",
+            "key_findings": [
+                {
+                    "finding": "Key finding description",
+                    "confidence_score": 0.0-1.0,
+                    "supporting_evidence": ["evidence1", "evidence2"],
+                    "significance": "high|medium|low"
+                }
+            ],
+            "entity_profiles": [
+                {
+                    "entity_name": "Name",
+                    "entity_type": "person|organization|location",
+                    "profile_summary": "Comprehensive profile based on collected intelligence",
+                    "key_attributes": {"attribute": "value"},
+                    "relationships": ["relationship1", "relationship2"],
+                    "confidence_score": 0.0-1.0
+                }
+            ],
+            "intelligence_assessment": {
+                "overall_confidence": 0.0-1.0,
+                "information_quality": "excellent|good|fair|poor",
+                "coverage_completeness": 0.0-1.0,
+                "reliability_assessment": "high|medium|low"
+            },
+            "patterns_and_connections": [
+                {
+                    "pattern": "Description of identified pattern",
+                    "entities_involved": ["entity1", "entity2"],
+                    "significance": "high|medium|low",
+                    "confidence": 0.0-1.0
+                }
+            ],
+            "remaining_gaps": [
+                {
+                    "gap_description": "What information is still missing",
+                    "priority": "high|medium|low",
+                    "recommended_approach": "How to fill this gap"
+                }
+            ],
+            "strategic_recommendations": [
+                {
+                    "recommendation": "Actionable recommendation",
+                    "rationale": "Why this recommendation is important",
+                    "priority": "high|medium|low",
+                    "timeline": "immediate|short-term|long-term"
+                }
+            ],
+            "appendices": {
+                "evidence_summary": "Summary of all evidence collected",
+                "methodology_notes": "Notes on investigation methodology",
+                "limitations": "Known limitations of the investigation"
+            }
+        }
+        ...
+2025-06-14 00:44:50,585 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 00:44:50,585 - agents.synthesis_&_reporting_agent - INFO - Generated response of length 13969
+2025-06-14 00:44:50,585 - agents.synthesis_&_reporting_agent - INFO - Report generated successfully with 3 findings
+2025-06-14 00:44:50,585 - services.intelligence_service - INFO - Report generated successfully for cfc2ddd7-3a11-46c8-a263-397a8c478c6a
+2025-06-14 00:45:14,255 - services.intelligence_service - INFO - Generating comprehensive report for cfc2ddd7-3a11-46c8-a263-397a8c478c6a
+2025-06-14 00:45:14,255 - agents.synthesis_&_reporting_agent - INFO - Generating intelligence report for session cfc2ddd7-3a11-46c8-a263-397a8c478c6a
+2025-06-14 00:45:14,255 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Generate a comprehensive intelligence report based on all collected data:
+        
+        INVESTIGATION CONTEXT:
+        ORIGINAL QUERY: Gather intelligence on Michael Schumacher operations and potential risk indicators
+
+TARGET ENTITIES: Michael Schumacher (person) [Priority: critical], Corinna Schumacher (person) [Priority: high], Sabine Kehm (person) [Priority: high], Mick Schumacher (person) [Priority: medium], Keep Fighting Foundation (organization) [Priority: high], Ferrari (organization) [Priority: medium], Deutsche Vermögensberatung (DVAG) (organization) [Priority: medium], Gland, Switzerland (location) [Priority: high]
+
+INVESTIGATION FOCUS: From general role mapping to identifying financial decision-makers and asset managers., From tracking public appearances to tracking financial events (asset liquidation, new investments, sponsorship renewals).
+
+EVIDENCE COLLECTED (3 items):
+- Testimony: 1 items (avg confidence: 0.90)
+  • Directive to immediately commence research into the financial history of all target entities. (confidence: 0.90)
+- Intelligence: 2 items (avg confidence: 0.90)
+  • The investigation is officially pivoting to include a financial dimension, moving beyond public life... (confidence: 0.90)
+  • There is a clear directive to prioritize financial intelligence (FININT) gathering. (confidence: 0.90)
+
+INVESTIGATION PROCESS:
+- Query Analysis Agent: 1 interactions
+  • Comprehensive query analysis complete. Identified 8 entities across 3 categories...
+- Planning & Orchestration Agent: 2 interactions
+  • Strategic investigation plan developed: 3 primary objectives, 3 phases planned, ...
+  • Strategy updated: Phase status: pivot_required, 3 new opportunities identified, ...
+- Retrieval Agent: 2 interactions
+  • Let me start by understanding the basics:
+
+1. What have been Corinna Schumacher'...
+  • Questions adapted based on pivot analysis: Strategy: focus, 3 questions adapted,...
+- Intelligence Pipeline: 1 interactions
+  • Intelligence gathering pipeline initialized. Identified 8 target entities with m...
+- User provided 1 responses
+- Pivot Agent: 1 interactions
+  • Pivot analysis complete: Credibility: 0.9, 4 new investigation angles identified...
+- Synthesis & Reporting Agent: 2 interactions
+  • Intelligence report generated with 3 key findings and confidence score of 0.20...
+  • Comprehensive intelligence report generated with 3 key findings and confidence s...
+
+IDENTIFIED GAPS: Who are the primary legal and financial advisors currently managing the Schumacher family's assets and business interests?, What is the current nature and value of the enduring partnership with Deutsche Vermögensberatung (DVAG)?, Are there any pending, recent, or potential legal challenges or liabilities?, What specific security and privacy protocols are in place at the Gland, Switzerland residence and how have they been tested?, The overall structure and location of the Schumacher family's assets., The specific financial mechanisms of the enduring partnership with DVAG., The annual operating budget and funding sources for the security and privacy protocols at the Gland residence., Leverage financial news archives to trace the history of sponsorship deals (DVAG, Ferrari)., Analyze the public statements of family representatives through a financial lens, looking for clues about asset management., Investigate the corporate structure of the Keep Fighting Foundation for financial transparency reports.
+
+RECENT QUESTIONS: Regarding the long-standing sponsorship with Deutsche Vermögensberatung (DVAG), who specifically within the family's inner circle is now the primary signatory or decision-maker for renewing or altering that agreement?; Can you outline any significant sales of personal assets, such as real estate or vehicles, that have occurred since 2014? Who would have overseen the logistics and financial returns of such sales?; Looking at the Keep Fighting Foundation, beyond the public-facing representatives, who is legally and financially responsible for its governance and financial reporting? Is there a board of trustees or a financial director we can identify?; What is that individual's official title or relationship to the family?
+        
+        Generate a structured report in JSON format:
+        {
+            "executive_summary": "High-level summary of key findings and conclusions",
+            "key_findings": [
+                {
+                    "finding": "Key finding description",
+                    "confidence_score": 0.0-1.0,
+                    "supporting_evidence": ["evidence1", "evidence2"],
+                    "significance": "high|medium|low"
+                }
+            ],
+            "entity_profiles": [
+                {
+                    "entity_name": "Name",
+                    "entity_type": "person|organization|location",
+                    "profile_summary": "Comprehensive profile based on collected intelligence",
+                    "key_attributes": {"attribute": "value"},
+                    "relationships": ["relationship1", "relationship2"],
+                    "confidence_score": 0.0-1.0
+                }
+            ],
+            "intelligence_assessment": {
+                "overall_confidence": 0.0-1.0,
+                "information_quality": "excellent|good|fair|poor",
+                "coverage_completeness": 0.0-1.0,
+                "reliability_assessment": "high|medium|low"
+            },
+            "patterns_and_connections": [
+                {
+                    "pattern": "Description of identified pattern",
+                    "entities_involved": ["entity1", "entity2"],
+                    "significance": "high|medium|low",
+                    "confidence": 0.0-1.0
+                }
+            ],
+            "remaining_gaps": [
+                {
+                    "gap_description": "What information is still missing",
+                    "priority": "high|medium|low",
+                    "recommended_approach": "How to fill this gap"
+                }
+            ],
+            "strategic_recommendations": [
+                {
+                    "recommendation": "Actionable recommendation",
+                    "rationale": "Why this recommendation is important",
+                    "priority": "high|medium|low",
+                    "timeline": "immediate|short-term|long-term"
+                }
+            ],
+            "appendices": {
+                "evidence_summary": "Summary of all evidence collected",
+                "methodology_notes": "Notes on investigation methodology",
+                "limitations": "Known limitations of the investigation"
+            }
+        }
+        ...
+2025-06-14 00:45:40,299 - services.llm_providers - WARNING - Gemini response issue for gemini-2.5-pro-preview-06-05 (ValueError accessing .text): Could not convert `part.function_call` to text.. Prompt: 
+        Generate a comprehensive intelligence report based on all collected data:
+        
+        ...
+2025-06-14 00:45:40,299 - agents.synthesis_&_reporting_agent - INFO - Generated response of length 124
+2025-06-14 00:45:40,299 - agents.synthesis_&_reporting_agent - INFO - Report generated successfully with 0 findings
+2025-06-14 00:45:40,299 - services.intelligence_service - INFO - Report generated successfully for cfc2ddd7-3a11-46c8-a263-397a8c478c6a
+2025-06-14 00:59:13,124 - main - INFO - Shutting down Intelligence Gathering Service...
+2025-06-14 00:59:13,124 - services.websocket_manager - INFO - All WebSocket connections closed
+2025-06-14 00:59:18,820 - main - INFO - Starting Intelligence Gathering Service...
+2025-06-14 00:59:18,820 - services.intelligence_service - INFO - Intelligence service initialized with complete agent pipeline
+2025-06-14 00:59:53,190 - main - INFO - Shutting down Intelligence Gathering Service...
+2025-06-14 00:59:53,190 - services.websocket_manager - INFO - All WebSocket connections closed
+2025-06-14 01:00:06,087 - main - INFO - Starting Intelligence Gathering Service...
+2025-06-14 01:00:06,089 - services.intelligence_service - INFO - Intelligence service initialized with complete agent pipeline
+2025-06-14 01:00:24,743 - services.intelligence_service - INFO - Starting comprehensive investigation f0ebe8c8-02d3-4a7c-8479-379f6ed8953a
+2025-06-14 01:00:24,743 - services.intelligence_service - INFO - Phase 1: Query Analysis for f0ebe8c8-02d3-4a7c-8479-379f6ed8953a
+2025-06-14 01:00:24,745 - agents.query_analysis_agent - INFO - Analyzing query: Gather intelligence on Michael Schumacher operations and potential risk indicators...
+2025-06-14 01:00:24,746 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Conduct comprehensive intelligence analysis of this request:
+        "Gather intelligence o...
+2025-06-14 01:00:58,177 - services.llm_providers - WARNING - Gemini response issue for gemini-2.5-pro-preview-06-05 (ValueError accessing .text): Could not convert `part.function_call` to text.. Prompt: 
+        Conduct comprehensive intelligence analysis of this request:
+        "Gather intelligence o...
+2025-06-14 01:00:58,177 - agents.query_analysis_agent - INFO - Generated response of length 124
+2025-06-14 01:00:58,192 - agents.query_analysis_agent - INFO - Analysis complete. Found 0 entities with moderate complexity
+2025-06-14 01:00:58,192 - services.intelligence_service - INFO - Phase 2: Strategic Planning for f0ebe8c8-02d3-4a7c-8479-379f6ed8953a
+2025-06-14 01:00:58,192 - agents.planning_&_orchestration_agent - INFO - Creating comprehensive investigation plan
+2025-06-14 01:00:58,192 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Develop a comprehensive intelligence gathering strategy:
+        
+        INVESTIGATION CON...
+2025-06-14 01:01:41,264 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 01:01:41,264 - agents.planning_&_orchestration_agent - INFO - Generated response of length 9901
+2025-06-14 01:01:41,264 - agents.planning_&_orchestration_agent - INFO - Strategic plan created with 4 objectives
+2025-06-14 01:01:41,264 - services.intelligence_service - INFO - Phase 3: Initial Question Formulation for f0ebe8c8-02d3-4a7c-8479-379f6ed8953a
+2025-06-14 01:01:41,264 - agents.retrieval_agent - INFO - Formulating strategic questions based on investigation plan
+2025-06-14 01:01:41,264 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Formulate strategic questions based on the comprehensive investigation context:
+        
+  ...
+2025-06-14 01:02:14,168 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 01:02:14,168 - agents.retrieval_agent - INFO - Generated response of length 5273
+2025-06-14 01:02:14,168 - agents.retrieval_agent - INFO - Formulated 4 strategic questions with layered approach
+2025-06-14 01:02:14,184 - services.intelligence_service - INFO - Investigation f0ebe8c8-02d3-4a7c-8479-379f6ed8953a pipeline initialized successfully
+2025-06-14 01:02:33,129 - services.intelligence_service - INFO - Processing response for f0ebe8c8-02d3-4a7c-8479-379f6ed8953a
+2025-06-14 01:02:33,144 - services.intelligence_service - INFO - Phase 4: Pivot Analysis for f0ebe8c8-02d3-4a7c-8479-379f6ed8953a
+2025-06-14 01:02:33,144 - agents.pivot_agent - INFO - Analyzing response for pivot opportunities
+2025-06-14 01:02:33,144 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Analyze this intelligence response and identify pivot opportunities:
+        
+        CONTE...
+2025-06-14 01:02:57,494 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 01:02:57,494 - agents.pivot_agent - INFO - Generated response of length 3820
+2025-06-14 01:02:57,494 - agents.pivot_agent - INFO - Pivot analysis complete. Found 4 new angles, extracted 5 evidence items
+2025-06-14 01:02:57,494 - services.intelligence_service - INFO - Phase 5: Strategy Update for f0ebe8c8-02d3-4a7c-8479-379f6ed8953a
+2025-06-14 01:02:57,494 - agents.planning_&_orchestration_agent - INFO - Updating investigation strategy based on new intelligence
+2025-06-14 01:02:57,494 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Update the investigation strategy based on new intelligence:
+        
+        CURRENT SITUA...
+2025-06-14 01:03:20,803 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 01:03:20,803 - agents.planning_&_orchestration_agent - INFO - Generated response of length 3101
+2025-06-14 01:03:20,805 - services.intelligence_service - INFO - Phase 6: Adaptive Question Generation for f0ebe8c8-02d3-4a7c-8479-379f6ed8953a
+2025-06-14 01:03:20,807 - services.intelligence_service - INFO - Questioning decision for f0ebe8c8-02d3-4a7c-8479-379f6ed8953a: Evidence: 5/5, Confidence: 0.10/0.7, Gaps: 9/3, Turns: 1/20, Continue: True
+2025-06-14 01:03:20,807 - agents.retrieval_agent - INFO - Adapting questions based on pivot analysis
+2025-06-14 01:03:20,808 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Adapt questioning strategy based on pivot analysis:
+        
+        PIVOT ANALYSIS CONTEXT...
+2025-06-14 01:03:45,149 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 01:03:45,149 - agents.retrieval_agent - INFO - Generated response of length 4384
+2025-06-14 01:03:45,149 - services.intelligence_service - INFO - Response processed for f0ebe8c8-02d3-4a7c-8479-379f6ed8953a. Status: InvestigationStatus.WAITING_FOR_INPUT
+2025-06-14 01:04:29,570 - services.intelligence_service - INFO - Generating comprehensive report for f0ebe8c8-02d3-4a7c-8479-379f6ed8953a
+2025-06-14 01:04:29,570 - agents.synthesis_&_reporting_agent - INFO - Generating intelligence report for session f0ebe8c8-02d3-4a7c-8479-379f6ed8953a
+2025-06-14 01:04:29,574 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Generate a comprehensive intelligence report based on all collected data:
+        
+        ...
+2025-06-14 01:05:20,056 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 01:05:20,056 - agents.synthesis_&_reporting_agent - INFO - Generated response of length 11104
+2025-06-14 01:05:20,072 - agents.synthesis_&_reporting_agent - INFO - Successfully parsed report data from JSON response
+2025-06-14 01:05:20,072 - agents.synthesis_&_reporting_agent - INFO - Report generated successfully with 3 findings
+2025-06-14 01:05:20,072 - services.intelligence_service - INFO - Report generated successfully for f0ebe8c8-02d3-4a7c-8479-379f6ed8953a
+2025-06-14 01:05:38,231 - services.intelligence_service - INFO - Generating comprehensive report for f0ebe8c8-02d3-4a7c-8479-379f6ed8953a
+2025-06-14 01:05:38,231 - agents.synthesis_&_reporting_agent - INFO - Generating intelligence report for session f0ebe8c8-02d3-4a7c-8479-379f6ed8953a
+2025-06-14 01:05:38,231 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Generate a comprehensive intelligence report based on all collected data:
+        
+        ...
+2025-06-14 01:06:30,877 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 01:06:30,877 - agents.synthesis_&_reporting_agent - INFO - Generated response of length 10873
+2025-06-14 01:06:30,877 - agents.synthesis_&_reporting_agent - INFO - Successfully parsed report data from JSON response
+2025-06-14 01:06:30,877 - agents.synthesis_&_reporting_agent - INFO - Report generated successfully with 3 findings
+2025-06-14 01:06:30,877 - services.intelligence_service - INFO - Report generated successfully for f0ebe8c8-02d3-4a7c-8479-379f6ed8953a
+2025-06-14 01:07:47,215 - main - INFO - Shutting down Intelligence Gathering Service...
+2025-06-14 01:07:47,215 - services.websocket_manager - INFO - All WebSocket connections closed
+2025-06-14 01:07:59,903 - main - INFO - Starting Intelligence Gathering Service...
+2025-06-14 01:07:59,919 - services.intelligence_service - INFO - Intelligence service initialized with complete agent pipeline
+2025-06-14 01:10:03,278 - services.intelligence_service - INFO - Starting comprehensive investigation dd11ff40-53c5-4afe-90eb-83a862536b30
+2025-06-14 01:10:03,278 - services.intelligence_service - INFO - Phase 1: Query Analysis for dd11ff40-53c5-4afe-90eb-83a862536b30
+2025-06-14 01:10:03,278 - agents.query_analysis_agent - INFO - Analyzing query: Gather intelligence on Michael Schumacher operations and potential risk indicators...
+2025-06-14 01:10:03,278 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Conduct comprehensive intelligence analysis of this request:
+        "Gather intelligence o...
+2025-06-14 01:10:35,668 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 01:10:35,668 - agents.query_analysis_agent - INFO - Generated response of length 6157
+2025-06-14 01:10:35,668 - agents.query_analysis_agent - INFO - Analysis complete. Found 7 entities with complex complexity
+2025-06-14 01:10:35,668 - services.intelligence_service - INFO - Phase 2: Strategic Planning for dd11ff40-53c5-4afe-90eb-83a862536b30
+2025-06-14 01:10:35,668 - agents.planning_&_orchestration_agent - INFO - Creating comprehensive investigation plan
+2025-06-14 01:10:35,668 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Develop a comprehensive intelligence gathering strategy:
+        
+        INVESTIGATION CON...
+2025-06-14 01:11:23,797 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 01:11:23,797 - agents.planning_&_orchestration_agent - INFO - Generated response of length 10497
+2025-06-14 01:11:23,797 - agents.planning_&_orchestration_agent - INFO - Strategic plan created with 3 objectives
+2025-06-14 01:11:23,797 - services.intelligence_service - INFO - Phase 3: Initial Question Formulation for dd11ff40-53c5-4afe-90eb-83a862536b30
+2025-06-14 01:11:23,797 - agents.retrieval_agent - INFO - Formulating strategic questions based on investigation plan
+2025-06-14 01:11:23,797 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Formulate strategic questions based on the comprehensive investigation context:
+        
+  ...
+2025-06-14 01:11:53,087 - services.llm_providers - WARNING - Gemini response issue for gemini-2.5-pro-preview-06-05 (ValueError accessing .text): Could not convert `part.function_call` to text.. Prompt: 
+        Formulate strategic questions based on the comprehensive investigation context:
+        
+  ...
+2025-06-14 01:11:53,087 - agents.retrieval_agent - INFO - Generated response of length 124
+2025-06-14 01:11:53,087 - agents.retrieval_agent - INFO - Formulated 0 strategic questions with adaptive approach
+2025-06-14 01:11:53,087 - services.intelligence_service - INFO - Investigation dd11ff40-53c5-4afe-90eb-83a862536b30 pipeline initialized successfully
+2025-06-14 01:12:57,262 - services.intelligence_service - INFO - Processing response for dd11ff40-53c5-4afe-90eb-83a862536b30
+2025-06-14 01:12:57,262 - services.intelligence_service - INFO - Phase 4: Pivot Analysis for dd11ff40-53c5-4afe-90eb-83a862536b30
+2025-06-14 01:12:57,264 - agents.pivot_agent - INFO - Analyzing response for pivot opportunities
+2025-06-14 01:12:57,265 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Analyze this intelligence response and identify pivot opportunities:
+        
+        CONTE...
+2025-06-14 01:13:15,757 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 01:13:15,757 - agents.pivot_agent - INFO - Generated response of length 3058
+2025-06-14 01:13:15,757 - agents.pivot_agent - INFO - Pivot analysis complete. Found 3 new angles, extracted 3 evidence items
+2025-06-14 01:13:15,757 - services.intelligence_service - INFO - Phase 5: Strategy Update for dd11ff40-53c5-4afe-90eb-83a862536b30
+2025-06-14 01:13:15,757 - agents.planning_&_orchestration_agent - INFO - Updating investigation strategy based on new intelligence
+2025-06-14 01:13:15,757 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Update the investigation strategy based on new intelligence:
+        
+        CURRENT SITUA...
+2025-06-14 01:13:42,832 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 01:13:42,837 - agents.planning_&_orchestration_agent - INFO - Generated response of length 3376
+2025-06-14 01:13:42,837 - services.intelligence_service - INFO - Phase 6: Adaptive Question Generation for dd11ff40-53c5-4afe-90eb-83a862536b30
+2025-06-14 01:13:42,837 - services.intelligence_service - INFO - Questioning decision for dd11ff40-53c5-4afe-90eb-83a862536b30: Evidence: 3/5, Confidence: 0.10/0.7, Gaps: 8/3, Turns: 1/20, Continue: True
+2025-06-14 01:13:42,837 - agents.retrieval_agent - INFO - Adapting questions based on pivot analysis
+2025-06-14 01:13:42,837 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Adapt questioning strategy based on pivot analysis:
+        
+        PIVOT ANALYSIS CONTEXT...
+2025-06-14 01:14:09,712 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 01:14:09,717 - agents.retrieval_agent - INFO - Generated response of length 3857
+2025-06-14 01:14:09,717 - services.intelligence_service - INFO - Response processed for dd11ff40-53c5-4afe-90eb-83a862536b30. Status: InvestigationStatus.WAITING_FOR_INPUT
+2025-06-14 01:14:55,653 - services.intelligence_service - INFO - Generating comprehensive report for dd11ff40-53c5-4afe-90eb-83a862536b30
+2025-06-14 01:14:55,653 - agents.synthesis_&_reporting_agent - INFO - Generating intelligence report for session dd11ff40-53c5-4afe-90eb-83a862536b30
+2025-06-14 01:14:55,655 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Generate a comprehensive intelligence report based on all collected data:
+        
+        ...
+2025-06-14 01:15:34,308 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 01:15:34,309 - agents.synthesis_&_reporting_agent - INFO - Generated response of length 10895
+2025-06-14 01:15:34,311 - agents.synthesis_&_reporting_agent - INFO - Successfully parsed report data from JSON response
+2025-06-14 01:15:34,311 - agents.synthesis_&_reporting_agent - INFO - Report generated successfully with 3 findings
+2025-06-14 01:15:34,312 - services.intelligence_service - INFO - Report generated successfully for dd11ff40-53c5-4afe-90eb-83a862536b30
+2025-06-14 01:15:48,967 - services.intelligence_service - INFO - Generating comprehensive report for dd11ff40-53c5-4afe-90eb-83a862536b30
+2025-06-14 01:15:48,967 - agents.synthesis_&_reporting_agent - INFO - Generating intelligence report for session dd11ff40-53c5-4afe-90eb-83a862536b30
+2025-06-14 01:15:48,967 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generating response for prompt: 
+        Generate a comprehensive intelligence report based on all collected data:
+        
+        ...
+2025-06-14 01:16:34,087 - services.llm_providers - INFO - Gemini (gemini-2.5-pro-preview-06-05) generated response successfully.
+2025-06-14 01:16:34,087 - agents.synthesis_&_reporting_agent - INFO - Generated response of length 11404
+2025-06-14 01:16:34,100 - agents.synthesis_&_reporting_agent - INFO - Successfully parsed report data from JSON response
+2025-06-14 01:16:34,100 - agents.synthesis_&_reporting_agent - INFO - Report generated successfully with 3 findings
+2025-06-14 01:16:34,101 - services.intelligence_service - INFO - Report generated successfully for dd11ff40-53c5-4afe-90eb-83a862536b30

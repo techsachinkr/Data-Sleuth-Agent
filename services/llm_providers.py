@@ -72,25 +72,30 @@ class GeminiProvider(LLMProvider):
             # model_name should be like "gemini-1.5-flash", "gemini-pro", etc.
             model = genai.GenerativeModel(self.model_name, **model_init_kwargs)
             
-            logger.info(f"Gemini ({self.model_name}) generating response for prompt: {prompt}...")
+            logger.info(f"Gemini ({self.model_name}) generating response for prompt: {prompt[:100]}...")
             
-            # Configure the Google Search tool
-            tools = [{
-                "function_declarations": [{
-                    "name": "google_search",
-                    "description": "Search Google for real-time information",
-                    "parameters": {
-                        "type": "OBJECT",
-                        "properties": {
-                            "query": {
-                                "type": "STRING",
-                                "description": "The search query"
-                            }
-                        },
-                        "required": ["query"]
-                    }
+            # Only include tools for search/research tasks, not for report generation
+            use_tools = kwargs.get('use_tools', True)
+            tools = None
+            
+            if use_tools and not any(keyword in prompt.lower() for keyword in ['generate a comprehensive intelligence report', 'parse the json response', 'analysis based on all collected data']):
+                # Configure the Google Search tool for research tasks
+                tools = [{
+                    "function_declarations": [{
+                        "name": "google_search",
+                        "description": "Search Google for real-time information",
+                        "parameters": {
+                            "type": "OBJECT",
+                            "properties": {
+                                "query": {
+                                    "type": "STRING",
+                                    "description": "The search query"
+                                }
+                            },
+                            "required": ["query"]
+                        }
+                    }]
                 }]
-            }]
 
             response = await model.generate_content_async(prompt, tools=tools)
             
