@@ -21148,3 +21148,5 @@ RECENT QUESTIONS: Regarding the long-standing sponsorship with Deutsche Vermögen
 2025-06-14 01:16:34,100 - agents.synthesis_&_reporting_agent - INFO - Successfully parsed report data from JSON response
 2025-06-14 01:16:34,100 - agents.synthesis_&_reporting_agent - INFO - Report generated successfully with 3 findings
 2025-06-14 01:16:34,101 - services.intelligence_service - INFO - Report generated successfully for dd11ff40-53c5-4afe-90eb-83a862536b30
+2025-06-15 12:51:30,780 - main - INFO - Shutting down Intelligence Gathering Service...
+2025-06-15 12:51:30,780 - services.websocket_manager - INFO - All WebSocket connections closed

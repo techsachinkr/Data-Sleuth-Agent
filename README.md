@@ -264,12 +264,22 @@ Data-Sleuth-Agent/
 # API Request
 POST /api/v1/intelligence/investigate
 {
-    "query": "Investigate John Smith's business activities in New York",
+    "query": "Gather intelligence on Micahel Schumacher operations and potential risk indicators,
     "priority": "high"
 }
 
 # Response includes session_id and initial questions
 ```
+
+![Alt text](figures/ui_demo_1.PNG)
+
+![Alt text](figures/ui_demo_2.PNG)
+
+![Alt text](figures/ui_demo_3.PNG)
+
+![Alt text](figures/ui_demo_4.PNG)
+
+![Alt text](figures/ui_demo_5.PNG)
 
 ### **Interactive Investigation Flow**
 1. **User submits initial query** → System analyzes and plans investigation
